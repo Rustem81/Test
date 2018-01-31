@@ -1,2 +1,47 @@
+@import "app/libs/magnific-popup/dist/magnific-popup" // Импортируем библиотеку Magnific Popup
 body
-  background-color: blue
+  background-color: green
+    max-width: 1024px
+    padding: 0px
+    margin: 0px
+
+#page
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto 1fr 1fr
+
+#header
+  grid-column: 1
+  grid-row: 1
+  justify-content: flex-start
+
+
+  left: 10px
+
+  background: rgba(255, 0, 0, 0.5)
+
+
+
+  nav
+    width: 100%
+  nav ul
+    display: flex
+    justify-content: space-between
+    space-between
+    text-align: justify
+    text-align-last: justify
+    align-items: center
+    li
+      list-style-type: none
+    a
+      color: green
+      text-decoration: none
+
+#content
+  grid-row: 2
+
+#footer
+  grid-row: 3
+
+
+
