@@ -1,24 +1,29 @@
 @import "app/libs/magnific-popup/dist/magnific-popup" // Импортируем библиотеку Magnific Popup
+
 body
   background-color: green
-    max-width: 1024px
-    padding: 0px
-    margin: 0px
+  margin-top: 0px
+  margin-left: auto
+  margin-right: auto
+  display: block
+  max-width: 1024px
+  height: 100%
 
 #page
   display: grid
-  grid-template-columns: 1fr
-  grid-template-rows: auto 1fr 1fr
+  grid-template-columns: auto auto auto
+  grid-template-rows: auto auto auto
+  overflow: auto
+  justify-self: center
+  align-self: center
 
 #header
-  grid-column: 1
+  grid-column: 2
   grid-row: 1
-  justify-content: flex-start
-
-
-  left: 10px
-
+  height: 40px
   background: rgba(255, 0, 0, 0.5)
+  top: 0
+  min-height: 2em
 
 
 
@@ -26,11 +31,7 @@ body
     width: 100%
   nav ul
     display: flex
-    justify-content: space-between
-    space-between
-    text-align: justify
-    text-align-last: justify
-    align-items: center
+    justify-content: space-around
     li
       list-style-type: none
     a
@@ -38,10 +39,32 @@ body
       text-decoration: none
 
 #content
+  grid-column: 2
   grid-row: 2
 
+
+
+#asetsleft
+  grid-column: 1
+  grid-row: 2
+  background: #f0f0f0
+  padding: 10px
+  width: 300px
+  float: right
+  display: none
+#asetsricht
+  grid-column: 3
+  grid-row: 2
+  background: #f0f0f0
+  padding: 10px
+  width: 300px
+  float: left
+  display: none
+
+
+
 #footer
-  grid-row: 3
+  display: flex
 
 
 
